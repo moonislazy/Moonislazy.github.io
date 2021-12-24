@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #e4e4e4;
+}
+
+/*
+/* 页眉/Blog 标题 */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: rgba(185, 137, 247, 0.835);
+}
+*/
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(170, 106, 255, 0.835);
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ddd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: #e4e4e4;
+  color: black;
+}
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  background-color: #e4e4e4;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>鼠人编程一生</h1>
+  <p>其实鼠人有极大可能并不会编程一生</p>
+</div>
+
+<div class="topnav">
+  <a href="幽默.html">幽默</a>
+  <a href="影视.html">影视</a>
+  <a href="编程.html">编程</a>
+  <a href="未完待续.html" style="float:right">未完待续</a>
+  <a href="index.html" style="float:right">前半生</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>*为什么选计算机啊？*</h2>
+      <h5>还没有目标的时候 先搞钱</h5>
+      <img src="Pic/搞钱.jpg" width="581.78" height="372.125"/>
+      <h5>我爸：计算机？</h5>
+      <h5>我：行吧</h5>
+    </div>
+    <div class="card">
+      <h2>*编程之路如何走*</h2>
+      <h5>不知道 我需要寻找目标</h5>
+      <table border="1" width="590">
+        <th align="center" colspan="2">专业选择</th>        
+        <tr>        
+        <td align="center" width="295">计算机科学与技术</td>        
+        <td align="center">人工智能</td>        
+        </tr>        
+        <tr>        
+        <td align="center">网络空间安全</td>        
+        <td align="center">通信工程</td>       
+        </tr>        
+        </table>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>*我原本的职业规划*</h2>
+      <h4>*一个有钱途的规划</h4>
+      <ul>
+        <li>进入大厂</li>
+        <li>努力工作</li>
+        <li>争取熬过35岁门槛 *注：已变为30岁门槛*</li>
+        <li>早日实现财富自由</li>
+      </ul>
+      <h5>但现在不了</h5>
+      <h5>我还是想要身体健康</h5>
+      <h5>人是要为祖国和社会努力工作的</h5>
+      <h5>但不应该以健康为代价</h5>
+    </div>
+    <div class="card">
+      <h2>*鼠人学编程的证据：*</h2>
+      <img src="Pic/学编程的证据.jpg" width="447.525" height="97.92"/>
+    </div>
+    <div class="card">
+      <h2>如果觉得鼠人这样那样无病呻吟想要取得联系:</h2>
+      <p>鼠人邮箱:2798778230@qq.com<br>Shuren's github:moonislazy<br></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>鼠的编程生涯未完待续<br></h4>
+  <h3>如果你觉得鼠人的编程很烂并愿意指导的话...!<br></h3>
+  <h1>务必联系她！</h1>
+  <h6>在这里偷偷放个小emoji</h6>
+  <h6>发现的人30s内许愿有好运</h6>
+  <p>&#128512;</p>
+</div>
+
+</body>
+</html>

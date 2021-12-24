@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #e4e4e4;
+}
+
+/*
+/* 页眉/Blog 标题 */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: rgba(20,177,117,0.781);
+}
+*/
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* 设置上导航栏的样式 */
+.topnav {
+  overflow: hidden;
+  background-color: rgba(48, 180, 130, 0.794);
+}
+
+/* 设置 topnav 链接的样式 */
+.topnav a {
+  float: left;
+  display: block;
+  color: #ddd;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* 改变鼠标悬停时的颜色 */
+.topnav a:hover {
+  background-color: #e4e4e4;
+  color: black;
+}
+
+/* 创建两个不相等的彼此并排的浮动列 */
+/* 左列 */
+.leftcolumn {   
+  float: left;
+  width: 65%;
+}
+
+/* 右列 */
+.rightcolumn {
+  float: left;
+  width: 35%;
+  background-color: #e4e4e4;
+  padding-left: 20px;
+}
+
+/* 伪图像 */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* 为文章添加卡片效果 */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* 清除列之后的浮动 */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* 页脚 */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>鼠人影视一生</h1>
+  <p>勘误：*鼠人还没开始的影视一生*</p>
+</div>
+
+<div class="topnav">
+  <a href="幽默.html">幽默</a>
+  <a href="影视.html">影视</a>
+  <a href="编程.html">编程</a>
+  <a href="未完待续.html" style="float:right">未完待续</a>
+  <a href="index.html" style="float:right">前半生</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>*不想当剪辑师的鼠人不是好鼠人*</h2>
+      <h5>剪辑师真的是我的梦想之一</h5>
+      <h5>准确地说 我的梦想是从事影视相关的工作</h5>
+      <h5>至于为什么我现在要在半夜十二点敲下这行字</h5>
+      <h5>我也不知道 或许也不重要了</h5>
+      <img src="Pic/b站.jpg" width="447.525" height="650.63"/>
+    </div>
+    <div class="card">
+      <h2>*我想做综艺*</h2>
+      <h5>我想做有意义的综艺</h5>
+      <h5>我想做能给人力量的综艺</h5>
+      <h5>我想做能让人向前看的综艺</h5>
+      <img src="Pic/综艺的艺术追求.jpg" width="447.525" height="220.7"/>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>*我和剪辑的距离*</h2>
+      <img src="Pic/不会剪辑.jpg" width="447.525" height="688.88"/>
+      <h5>我不会剪辑</h5>
+      <h5>我没有多余的精力学习剪辑</h5>
+      <h5>我的梦想还是空想状态</h5>
+      <h5>或许我更想做综艺导演</h5>
+    </div>
+    <div class="card">
+      <h2>*鼠人最喜欢的三部影视作品：*</h2>
+      <img src="Pic/三部影视作品.jpg" width="447.525" height="178.63"/>
+    </div>
+    <div class="card">
+      <h2>如果觉得鼠人离影视实在太远想要取得联系:</h2>
+      <p>鼠人邮箱:2798778230@qq.com<br>Shuren's github:moonislazy</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h4>鼠的影视生涯未完待续<br></h4>
+  <h3>如果你想要指导鼠人追寻梦想的话...!<br></h3>
+  <h1>务必联系我！</h1>
+</div>
+
+</body>
+</html>
